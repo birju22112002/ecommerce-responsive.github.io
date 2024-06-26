@@ -1,5 +1,4 @@
-/** @format */
-
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -109,15 +108,18 @@ h4 {
   font-size: 20px;
   color: #222;
 }
+
 h6 {
   font-weight: 700;
   font-size: 12px;
 }
+
 p {
   font-size: 16px;
   color: #465b52;
   margin: 15px 0 20px 0;
 }
+
 #hero button {
   background-color: transparent;
   width: 250px;
@@ -143,6 +145,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #features .f-box {
@@ -174,18 +177,23 @@ p {
   color: #088178;
   background-color: #fddde4;
 }
+
 #features .f-box:nth-child(2) h6 {
   background-color: #cdebbc;
 }
+
 #features .f-box:nth-child(3) h6 {
   background-color: #d1e8f2;
 }
+
 #features .f-box:nth-child(4) h6 {
   background-color: #cdd4f8;
 }
+
 #features .f-box:nth-child(5) h6 {
   background-color: #f6dbf6;
 }
+
 #features .f-box:nth-child(6) h6 {
   background-color: #fff2e5;
 }
@@ -221,6 +229,7 @@ p {
   width: 100%;
   border-radius: 25px;
 }
+
 .product-section .product-cart span {
   color: #969696;
   font-weight: 500;
@@ -299,10 +308,11 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #banners .big-banners div {
-  min-width: 500px;
+  min-width: 300px;
   margin: 15px;
   height: 300px;
   display: flex;
@@ -355,10 +365,11 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #banners .small-banners div {
-  min-width: 370px;
+  min-width: 200px;
   height: 200px;
   margin: 15px;
   display: flex;
@@ -411,7 +422,6 @@ span {
   background-color: #d1d0d0;
   border-radius: 6px 0 0 6px;
   font-size: 18px;
-
   border: none;
   outline: none;
   margin-right: -4px;
@@ -436,6 +446,7 @@ span {
   justify-content: space-between;
   padding: 75px;
   background-color: #ececec;
+  flex-wrap: wrap;
 }
 
 #footer p,
@@ -445,19 +456,16 @@ span {
 }
 
 #footer .contact img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 #footer a:hover {
   color: #088178;
 }
 
-#footer .about a {
-  display: block;
-  padding: 8px 0;
-}
-
+#footer .about a,
 #footer .myaccount a {
   display: block;
   padding: 8px 0;
@@ -466,4 +474,146 @@ span {
 #footer .download img {
   border: 1px solid #08817969;
   border-radius: 7px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #header {
+    padding: 20px 30px;
+    flex-direction: column;
+  }
+
+  #hero {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #hero button {
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  #features .f-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .product-section .product-collection {
+    margin: 0 10px;
+  }
+
+  .product-section .product-cart {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #banners {
+    margin: 0 10px;
+  }
+
+  #banners .big-banners div,
+  #banners .small-banners div {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+
+  #newsletter {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #newsletter .newsletter-text,
+  #newsletter .form {
+    width: 100%;
+  }
+
+  #newsletter .form input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #newsletter .form button {
+    width: 100%;
+  }
+
+  #footer {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #footer .contact img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  #hero button {
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  #features .f-box {
+    padding: 15px;
+  }
+
+  .product-section .product-collection {
+    margin: 0;
+  }
+
+  .product-section .product-cart {
+    padding: 10px;
+  }
+
+  #newsletter .newsletter-text h3 {
+    font-size: 24px;
+  }
+
+  #newsletter .form input {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  #newsletter .form button {
+    padding: 15px;
+    font-size: 15px;
+  }
 }
