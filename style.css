@@ -512,6 +512,11 @@ span {
     padding: 15px;
     display: block;
     width: 100%;
+    text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
   }
 
   .mobile-menu-toggle {
