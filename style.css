@@ -1,4 +1,9 @@
-/* Global Styles */
+/**
+ * Global Styles
+ *
+ * @format
+ */
+
 * {
   margin: 0;
   padding: 0;
@@ -508,12 +513,12 @@ span {
     text-align: center;
   }
 
-    .header-list-nav ul li a {
+  .header-list-nav ul li a {
     padding: 15px;
     display: block;
     width: 100%;
     text-decoration: none;
-    color:#1a1a1a;
+    color: #1a1a1a;
   }
 
   .mobile-menu-toggle {
@@ -523,7 +528,6 @@ span {
   .header-list-icon {
     display: none;
   }
-
 
   #hero {
     padding: 20px;
@@ -627,14 +631,14 @@ span {
     font-size: 12px;
   }
 
-     .header-list-nav ul li a {
+  .header-list-nav ul li a {
     padding: 15px;
     display: block;
     width: 100%;
     text-decoration: none;
-    color:#1a1a1a;
+    color: #1a1a1a;
   }
-  
+
   #hero button {
     width: 180px;
     height: 40px;
